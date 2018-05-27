@@ -12,6 +12,6 @@ if (age >= 21){
     document.writeln ("Eres un Preschooler de " + age + " años");
 } else if ( age < 3 && age >= 1){
     document.writeln ("Eres un Todler de " + age + " años");
-} else  { ( age != age )
-    document.writeln ("Error");
-} 
+} else  { (isNaN(parseFloat(age))) 
+        alert("Ups, ingrese un número");
+     }
